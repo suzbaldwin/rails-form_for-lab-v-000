@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  resources :school_classes, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  resources :students, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  # resources :school_classes
+  # resources :schools
+  # resources :schools
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -52,5 +58,4 @@ Rails.application.routes.draw do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
-  #   end
-end
+    end

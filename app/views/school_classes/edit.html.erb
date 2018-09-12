@@ -1,0 +1,21 @@
+
+
+<%= form_for(@school_class) do |f| %>
+  <label>School Class title:</label><br>
+  <%= f.text_field :title %><br>
+
+  <label>School Class Room Number:/label><br>
+    <%=f.text_field :room_number%><br>
+  <%= f.submit %>
+<% end %>
+
+
+
+
+
+<!-- <h1>Editing School Class</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @school_class %> |
+<%= link_to 'Back', school_classes_path %> -->
